@@ -2,7 +2,7 @@ Conduct gene-based rare variant association testing by using Burden, SKAT, and S
 
 ## Reference
 
-Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, and Daichi Shigemizu. Whole-genome sequencing to identify rare variants in East Asian patients with dementia with Lewy bodies, npj Aging volume XX, Article number: XX (2024)
+Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, and Daichi Shigemizu. Whole-genome sequencing to identify rare variants in East Asian patients with dementia with Lewy bodies, _npj Aging_ volume XX, Article number: XX (2024)
     
 ## Depend Tools
 
