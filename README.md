@@ -11,13 +11,15 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 * [R (3.4.3 or higher)](https://www.r-project.org/)
 * [CRAN: Package SKAT](https://cran.r-project.org/web/packages/SKAT/index.html)
 
-## Usage
-$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
+## Input
 - **Required input files:**
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
 3. tmp.fam (PLINK formatted file)
 4. tmp.setid (define SNPs sets: The first and second columns are set to gene name and SNP ID, respectively)
+
+## Usage
+$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
 ```console
 $ tar -zxvf data.tar.gz
 $ sh src/run.sh data/bbf_setid/tmp out/
