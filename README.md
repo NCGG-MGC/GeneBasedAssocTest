@@ -13,11 +13,11 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 
 ## Usage
 $ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
-**Required input 4 files:**
+**Required input files:**
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
 3. tmp.fam (PLINK formatted file)
-4. tmp.setid ( define SNP set: The first column is set ID and the second colomun is SNP ID.)
+4. tmp.setid (define SNPs sets: The first column is set ID and the second colomun is SNP ID.)
 ```console
 $ tar -zxvf data.tar.gz
 $ sh src/run.sh data/bbf_setid/tmp out/
