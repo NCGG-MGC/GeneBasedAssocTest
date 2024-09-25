@@ -40,18 +40,18 @@ if __FILE__ == $0
 
   opt  = OptionParser.new
   opts = Hash.new
-  required = [:outd, :iptf]
-  opt.on('--iptf ipt_file'){|v| opts[:iptf] = v} 
+  required = [:outd, :iptd]
+  opt.on('--iptd ipt_dir'){|v| opts[:iptd] = v} 
   opt.on('--outd out_dir'){|v| opts[:outd] = v}    
   opt.parse!(ARGV)
 
   required.each do |opt|
     if opts[opt].nil?
-      puts "Usage: ruby 02.skat_fdr.rb --iptf ../data/bbf_setid/tmp --outd ../out"
+      puts "Usage: ruby 02.skat_fdr.rb --iptd ../data/bbf_setid --outd ../out"
       exit
     end
   end
-  iptf = opts[:iptf] 
+  iptd = opts[:iptd] 
   outd = opts[:outd]
   FileUtils.mkdir_p(outd) if not File.exist?(outd)
 
@@ -72,9 +72,9 @@ if __FILE__ == $0
   tmp_SKATf  = "#{outd}/tmp.sort.SKAT.txt"
   tmp_SKATOf = "#{outd}/tmp.sort.SKAT_O.txt"
   tmp_Burdf  = "#{outd}/tmp.sort.Burden.txt"
-  system("cat #{iptf}*skat|sort -k5,5g|uniq|cut -f2-5   >#{tmp_SKATf}")
-  system("cat #{iptf}*skat|sort -k6,6g|uniq|cut -f2-4,6 >#{tmp_SKATOf}")
-  system("cat #{iptf}*skat|sort -k7,7g|uniq|cut -f2-4,7 >#{tmp_Burdf}")
+  system("cat #{iptd}/*skat|sort -k5,5g|uniq|cut -f2-5   >#{tmp_SKATf}")
+  system("cat #{iptd}/*skat|sort -k6,6g|uniq|cut -f2-4,6 >#{tmp_SKATOf}")
+  system("cat #{iptd}/*skat|sort -k7,7g|uniq|cut -f2-4,7 >#{tmp_Burdf}")
 
   sort_SKATf  = "#{outd}/01.sort.SKAT.txt"
   sort_SKATOf = "#{outd}/01.sort.SKAT_O.txt"
