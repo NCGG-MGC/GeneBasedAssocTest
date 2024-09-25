@@ -1,4 +1,4 @@
-Conduct gene-based rare variant association testing by Burden, SKAT, and SKAT-O. 
+Conduct a gene-based rare variant association testing by using Burden, SKAT, and SKAT-O. 
 
 ## Reference
 
