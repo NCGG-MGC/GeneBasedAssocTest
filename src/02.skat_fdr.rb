@@ -60,7 +60,7 @@ if __FILE__ == $0
   # extract gene IDs and gene names
   #
   # -----------------------------
-  seq_genef = "../data/seq_gene.md" 
+  seq_genef = "data/seq_gene.md" 
   gName_to_gID = gName_to_gID(seq_genef)
 
   # ------------------------------------
