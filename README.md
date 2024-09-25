@@ -12,7 +12,7 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 * [CRAN: Package SKAT](https://cran.r-project.org/web/packages/SKAT/index.html)
 
 ## usage
-sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory>
+$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory>
 ```console
 $ sh src/run.sh data/bbf_setid/tmp out/
 ```
