@@ -12,7 +12,7 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 * [CRAN: Package SKAT](https://cran.r-project.org/web/packages/SKAT/index.html)
 
 ## Usage
-$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory>
+$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
 Required input 4 files:
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
