@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-
 # ------------------------------------
 # extract gene names and gene IDs
 # ------------------------------------
@@ -20,8 +19,6 @@ def gName_to_gID(seq_genef)
 end
 
 
-
-
 def mod_outf(tmpf, outf)
   f = open(outf, "w")
   File.open(tmpf) do |lines|
@@ -36,9 +33,6 @@ def mod_outf(tmpf, outf)
 end
 
 
-
-
-
 if __FILE__ == $0
   require "optparse"
   require "fileutils"
@@ -46,18 +40,18 @@ if __FILE__ == $0
 
   opt  = OptionParser.new
   opts = Hash.new
-  required = [:outd, :iptd]
-  opt.on('--iptd ipt_dir'){|v| opts[:iptd] = v} 
+  required = [:outd, :iptf]
+  opt.on('--iptf ipt_file'){|v| opts[:iptf] = v} 
   opt.on('--outd out_dir'){|v| opts[:outd] = v}    
   opt.parse!(ARGV)
 
   required.each do |opt|
     if opts[opt].nil?
-      puts "Usage: ruby 02.skat_fdr.rb --iptd ../res/01.bbf --outd ../res/02.skat_fdr"
+      puts "Usage: ruby 02.skat_fdr.rb --iptf ../data/bbf_setid/tmp --outd ../out"
       exit
     end
   end
-  iptd = opts[:iptd] 
+  iptf = opts[:iptf] 
   outd = opts[:outd]
   FileUtils.mkdir_p(outd) if not File.exist?(outd)
 
@@ -78,9 +72,9 @@ if __FILE__ == $0
   tmp_SKATf  = "#{outd}/tmp.sort.SKAT.txt"
   tmp_SKATOf = "#{outd}/tmp.sort.SKAT_O.txt"
   tmp_Burdf  = "#{outd}/tmp.sort.Burden.txt"
-  system("cat #{iptd}/*skat|sort -k5,5g|uniq|cut -f2-5   >#{tmp_SKATf}")
-  system("cat #{iptd}/*skat|sort -k6,6g|uniq|cut -f2-4,6 >#{tmp_SKATOf}")
-  system("cat #{iptd}/*skat|sort -k7,7g|uniq|cut -f2-4,7 >#{tmp_Burdf}")
+  system("cat #{iptf}*skat|sort -k5,5g|uniq|cut -f2-5   >#{tmp_SKATf}")
+  system("cat #{iptf}*skat|sort -k6,6g|uniq|cut -f2-4,6 >#{tmp_SKATOf}")
+  system("cat #{iptf}*skat|sort -k7,7g|uniq|cut -f2-4,7 >#{tmp_Burdf}")
 
   sort_SKATf  = "#{outd}/01.sort.SKAT.txt"
   sort_SKATOf = "#{outd}/01.sort.SKAT_O.txt"
