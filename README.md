@@ -18,7 +18,7 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 ```
 
 ## Output
-03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt
+Final output files = out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt
 
 #|column|description
 -----|------|-----------
