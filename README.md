@@ -17,7 +17,7 @@ $ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output dire
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
 3. tmp.fam (PLINK formatted file)
-4. tmp.setid (define SNPs sets: The first and second columns are set to gene name and SNP ID, respectively.)
+4. tmp.setid (define SNPs sets: The first and second columns are set to gene name and SNP ID, respectively)
 ```console
 $ tar -zxvf data.tar.gz
 $ sh src/run.sh data/bbf_setid/tmp out/
