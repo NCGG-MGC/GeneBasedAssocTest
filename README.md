@@ -14,6 +14,7 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 ## Usage
 $ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory>
 ```console
+$ tar -zxvf data.tar.gz
 $ sh src/run.sh data/bbf_setid/tmp out/
 ```
 
