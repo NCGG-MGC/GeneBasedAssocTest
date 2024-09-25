@@ -13,7 +13,7 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 
 ## Usage
 $ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
-Required input 4 files:
+**Required input 4 files:**
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
 3. tmp.fam (PLINK formatted file)
