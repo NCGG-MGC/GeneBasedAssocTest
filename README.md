@@ -1,4 +1,4 @@
-Performe gene-based rare variant association testing (Burden, SKAT, and SKAT-O). 
+Conduct gene-based rare variant association testing by Burden, SKAT, and SKAT-O. 
 
 ## Reference
 
@@ -12,19 +12,20 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 * [CRAN: Package SKAT](https://cran.r-project.org/web/packages/SKAT/index.html)
 
 ## usage
-
+sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory>
 ```console
-$ sh src/run.sh ../res/01.bbf/ tmp ../res/02.skat_fdr
+$ sh src/run.sh data/bbf_setid/tmp out/
 ```
 
-## output:03.sort.<Burden,SKAT,SKAT-O>.rm_singleton.FDR.txt
+## output
+03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt
 
 #|column|description
 -----|------|-----------
-1|SetID|Gene Name
+1|SetID|Gene symbol
 2|SetSize|The number of SNPs
 3|Offset|Offset
-4|p.value|raw P-value
+4|Pvalue|Raw P-value
 5|gID|Gene ID
-6|BH|FDR (Benjamini-Hochberg)
-7|Bonf|Bonferroni correction
+6|FDR_BH|FDR (Benjamini-Hochberg)
+7|Bonferroni|Bonferroni correction
