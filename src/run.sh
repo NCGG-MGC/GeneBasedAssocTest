@@ -12,5 +12,5 @@
 # + prepare Ruby and R progmammings and the R package "SKAT"
 #
 dir=`dirname $1`
-Rscript 01.skat.R $1 $2
-ruby 02.skat_fdr.rb --iptd $dir --outd $2
+Rscript src/01.skat.R $1 $2
+ruby src/02.skat_fdr.rb --iptd $dir --outd $2
