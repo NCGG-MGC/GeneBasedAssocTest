@@ -19,7 +19,7 @@ Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, a
 4. tmp.setid (define SNPs sets: The first and second columns are set to gene name and SNP ID, respectively)
 
 ## Usage
-$ sh src/run.sh <1.input file: basename of PLINK formatted files> <2.output directory> <br>
+$ sh src/run.sh <1.input file: basename of PLINK formatted files and the setid file> <2.output directory> <br>
 ```console
 $ tar -zxvf data.tar.gz
 $ sh src/run.sh data/bbf_setid/tmp out/
