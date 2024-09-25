@@ -1,7 +1,6 @@
 Conduct gene-based rare variant association testing by using Burden, SKAT, and SKAT-O methods. 
     
 ## Depend Tools
-
 * [ruby (2.3 or higher)](https://www.ruby-lang.org/en/)
 * [PLINK](https://www.cog-genomics.org/plink/)
 * [R (3.4.3 or higher)](https://www.r-project.org/)
@@ -35,4 +34,4 @@ Final output files = out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt
 7|Bonferroni|Bonferroni correction
 
 ## Reference
-Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, and Daichi Shigemizu. Whole-genome sequencing to identify rare variants in East Asian patients with dementia with Lewy bodies, _npj Aging_. Vol. XX, Article number: XX (2024)
+Tetsuaki Kimura, Kosuke Fujita, Takashi Sakurai, Shumpei Niida, Kouichi Ozaki, and Daichi Shigemizu. **Whole-genome sequencing to identify rare variants in East Asian patients with dementia with Lewy bodies**. _npj Aging_. Vol. XX, Article number: XX (2024)
