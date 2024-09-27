@@ -21,8 +21,26 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 ```
 
 ## Output
-Final output files = out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt
+**1.output file = out/01.sort.<Burden,SKAT,SKAT-O>.txt**
+#|column|description
+-----|------|-----------
+1|SetID|Gene symbol
+2|SetSize|The number of SNPs
+3|Offset|Offset
+4|Pvalue|Raw P-value
 
+**2.output file = out/02.sort.<Burden,SKAT,SKAT-O>.rm_singleton.txt**
+exclude sigletons (gene with SetSize 1) from output file1.
+#|column|description
+-----|------|-----------
+1|SetID|Gene symbol
+2|SetSize|The number of SNPs
+3|Offset|Offset
+4|Pvalue|Raw P-value
+5|gID|Gene ID
+
+**3.output file = out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt**
+Final output file
 #|column|description
 -----|------|-----------
 1|SetID|Gene symbol
