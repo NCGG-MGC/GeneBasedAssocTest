@@ -7,7 +7,6 @@ Conduct gene-based rare variant association testing by using Burden, SKAT, and S
 * [CRAN: Package SKAT](https://cran.r-project.org/web/packages/SKAT/index.html)
 
 ## Input
-- **Required input files:**
 1. tmp.bed (PLINK formatted file)
 2. tmp.bim (PLINK formatted file)
 3. tmp.fam (PLINK formatted file)
