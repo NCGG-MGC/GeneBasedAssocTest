@@ -21,7 +21,7 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 ```
 
 ## Output
-**1. out/01.sort.<Burden,SKAT,SKAT-O>.txt**
+**1. out/01.sort.<Burden,SKAT,SKAT-O>.txt**<br>
 #|column|description
 -----|------|-----------
 1|SetID|Gene symbol
