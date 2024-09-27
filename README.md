@@ -23,10 +23,10 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 **1. out/01.sort.<Burden,SKAT,SKAT-O>.txt**
 #|column|description
 -----|------|-----------
-1|SetID|Gene symbol
-2|SetSize|The number of SNPs
-3|Offset|Offset
-4|Pvalue|Raw P-value
+1|SetID|gene symbol
+2|SetSize|the number of SNPs
+3|Offset|offset
+4|Pvalue|raw P-value
 
 **2. out/02.sort.<Burden,SKAT,SKAT-O>.rm_singleton.txt**: Exclude sigletons (genes with SetSize 1) from output file1. <br>
 #|column|description
