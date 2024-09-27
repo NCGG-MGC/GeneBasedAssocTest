@@ -38,7 +38,7 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 4|Pvalue|Raw P-value
 5|gID|Gene ID
 
-**3. out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt**: Final output file with ajusted P values to output file 2 <br>
+**3. out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt**: Final output file with adjusted P values to output file 2 <br>
 #|column|description
 -----|------|-----------
 1|SetID|Gene symbol
