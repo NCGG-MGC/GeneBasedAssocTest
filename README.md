@@ -29,8 +29,7 @@ $ sh src/run.sh data/bbf_setid/tmp out/
 3|Offset|Offset
 4|Pvalue|Raw P-value
 
-**2. out/02.sort.<Burden,SKAT,SKAT-O>.rm_singleton.txt** <br>
-exclude sigletons (gene with SetSize 1) from output file1.
+**2. out/02.sort.<Burden,SKAT,SKAT-O>.rm_singleton.txt** Exclude sigletons (gene with SetSize 1) from output file1. <br>
 #|column|description
 -----|------|-----------
 1|SetID|Gene symbol
@@ -39,7 +38,7 @@ exclude sigletons (gene with SetSize 1) from output file1.
 4|Pvalue|Raw P-value
 5|gID|Gene ID
 
-**3. out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt** <br>
+**3. out/03.sort.<Burden,SKAT,SKAT-O>.adjustedP.txt** Final output file <br>
 Final output file
 #|column|description
 -----|------|-----------
